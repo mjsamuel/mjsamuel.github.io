@@ -1,0 +1,32 @@
+background {
+	background-color: rgb(247,252,252)
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+	color: rgb(31,57,59);
+}
+
+nav li {
+	font-family: 'Open Sans', sans-serif;
+  display: inline;
+}
+
+nav a {
+	color: rgb(31,57,59);
+	text-decoration: none;
+}
+
+nav a:hover {
+	// text-decoration: underline;
+	background-color: rgb(177,212,215);
+}
+
+::-moz-selection {
+  background: rgb(177,212,215);
+}
+
+::selection {
+  background: rgb(177,212,215);
+}
