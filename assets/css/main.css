@@ -1,32 +1,41 @@
-background {
-	background-color: rgb(247,252,252)
-}
-
-h1 {
-	font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-	color: rgb(31,57,59);
-}
-
-nav li {
-	font-family: 'Open Sans', sans-serif;
-  display: inline;
-}
-
-nav a {
-	color: rgb(31,57,59);
-	text-decoration: none;
-}
-
-nav a:hover {
-	// text-decoration: underline;
-	background-color: rgb(177,212,215);
+:root {
+	--background: rgb(247,252,252);
+  --grey: rgb(31,57,59);
+	--blue: rgb(177,212,215);
 }
 
 ::-moz-selection {
-  background: rgb(177,212,215);
+  background: var(--blue);
 }
 
 ::selection {
-  background: rgb(177,212,215);
+  background: var(--blue);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background);
+  display: inline-block;
+}
+
+h1 {
+  font-family: 'Roboto', cursive;
+  font-weight: 500;
+	color: rgb(31,57,59);
+  margin: 0px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+	color: var(--grey);
+	text-decoration: none;
+}
+
+nav a:hover, nav li.active a {
+  border-bottom: 4px solid var(--blue);
+  line-height: 8px;
+  display:inline-block;
 }
