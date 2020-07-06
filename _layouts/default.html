@@ -2,12 +2,14 @@
 <html>
 {%- include head.html -%}
 <body>
-  {%- include header.html -%}
+  <div class="main">
+    {%- include header.html -%}
 
-	<main class="page-content" aria-label="Content">
-		{{ content }}
-	</main>
+  	<main class="page-content">
+  		{{ content }}
+  	</main>
 
-	{%- include footer.html -%}
+  	{%- include footer.html -%}
+  </div>
 </body>
 </html>

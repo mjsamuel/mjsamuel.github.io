@@ -4,24 +4,23 @@
 	--blue: rgb(177,212,215);
 }
 
-::-moz-selection {
-  background: var(--blue);
-}
-
-::selection {
-  background: var(--blue);
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
   background-color: var(--background);
-  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+.main {
+  margin: 0 auto;
+  margin-top: 25px;
+  min-width: 500px;
+  width: 45%;
+}
+
+nav h1 {
+  color: rgb(31,57,59);
   font-family: 'Roboto', cursive;
-  font-weight: 500;
-	color: rgb(31,57,59);
+  font-size: 18px;
+  font-weight: 350px;
   margin: 0px;
 }
 
@@ -30,12 +29,50 @@ nav li {
 }
 
 nav li a {
-	color: var(--grey);
-	text-decoration: none;
+  color: var(--grey);
+  font-size: 16px;
+  text-decoration: none;
 }
 
 nav a:hover, nav li.active a {
   border-bottom: 4px solid var(--blue);
-  line-height: 8px;
   display:inline-block;
+  line-height: 8px;
 }
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+h1 a {
+  color: var(--grey);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  font-size: 14px;
+  font-style: italic;
+  margin: 0px;
+
+}
+
+.content {
+  font-size: 15px;
+}
+
+::-moz-selection {
+  background: var(--blue);
+}
+
+::selection {
+  background: var(--blue);
+}
+
+
