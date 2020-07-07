@@ -1,8 +1,11 @@
-<nav role="navigation">
+<header>
   <h1>{{ site.title }}</h1>
 
-  {% for link in site.navigation %}
-    <li {% if page.url == link.url or page.layout == link.layout %}class="active"{% endif %}>
-    <a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a></li>
-  {% endfor %}
-</nav>
+  <nav role="navigation">
+    {% for link in site.navigation %}
+      <li {% if page.url == link.url or page.layout == link.layout %}class="active"{% endif %}>
+      <a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a></li>
+    {% endfor %}
+  </nav>
+</header>
+
