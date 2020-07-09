@@ -35,7 +35,7 @@ header {
 
 header h1 a {
   font-family: 'Roboto', cursive;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0px;
 
@@ -71,7 +71,7 @@ nav li a:hover, nav li.active a {
 
 /* Home page */
 .home {
-  margin: 0px -50px;
+  margin: 0 -50px 25px -50px;
   display: flex;
   align-items: center;
 }
@@ -118,6 +118,16 @@ nav li a:hover, nav li.active a {
 a {
   color: var(--grey);
   text-decoration: none;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--grey);
+}
+
+footer p {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 /* Mobile */
