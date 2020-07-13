@@ -2,6 +2,7 @@
 	--background: rgb(247,252,252);
   --grey: rgb(31,57,59);
 	--blue: rgb(177,212,215);
+  --dark-blue: rgb(99,182,185);
 }
 
 ::-moz-selection {
@@ -26,7 +27,7 @@ body {
 
 /* Header */
 header {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 header h1 a {
@@ -35,10 +36,6 @@ header h1 a {
   font-weight: bold;
   margin: 0px;
   float: left;
-}
-
-header h1 a:hover {
-  text-decoration: underline;
 }
 
 /* Header nav bar */
@@ -59,6 +56,7 @@ nav li a {
 nav li a:hover, nav li.active a {
   border-bottom: 4px solid var(--blue);
   line-height: 8px;
+  text-decoration: none;
 }
 
 /* Main content */
@@ -75,7 +73,7 @@ main {
 
 .home h1 {
   font-size: 44px;
-  margin: 20px 35px 0 0;
+  margin: 0 35px 0 0;
   border-bottom: 8px solid var(--blue);
   line-height: 26px;
 }
@@ -84,7 +82,7 @@ main {
   white-space: nowrap;
 }
 
-/* Posts list */
+/* Posts list*/
 article {
   border-bottom: 1px solid var(--grey);
 }
@@ -101,7 +99,7 @@ article h2 a:hover {
   text-decoration: underline;
 }
 
-article .date {
+.date, time {
   font-size: 14px;
   font-style: italic;
   margin: 0px;
@@ -109,6 +107,11 @@ article .date {
 
 article p {
   font-size: 15px;
+}
+
+/* Post */
+.post-content a {
+  color: var(--dark-blue);
 }
 
 /* Footer */
@@ -121,7 +124,7 @@ footer small {
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .post-meta {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -133,21 +136,27 @@ a {
   text-decoration: none;
 }
 
-div, small, article, h1, h2, h3, .date, nav li {
+a:hover {
+  text-decoration: underline;
+}
+
+div, small, article, h1, h2, h3, .date, 
+nav li {
   display: block;
 }
 
 /* Mobile */
-@media screen and (max-width: 668px) {  
+@media screen and (max-width: 700px) {  
   .main, #first, #second {
     width: 95%;
   }
 
   .home {
     margin: 0 0;
+    flex-wrap: wrap;
   }
 
-  .home {
-    flex-wrap: wrap;
+  .home h1 {
+    margin-bottom: 20px;
   }
 }
