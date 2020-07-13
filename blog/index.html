@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<div class="posts">
+<section>
 	{% for post in paginator.posts %}
-		<h1><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h1>
-		<span class="date">{{ post.date | date_to_string }}</span>
-		<div class="content">
-			{{ post.excerpt }}
-		</div>
-		<hr>
+    <article>
+      <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
+      <span class="date">{{ post.date | date_to_string }}</span>
+      {{ post.excerpt }}
+    </article>
 	{% endfor %}
-</div>
+</section>

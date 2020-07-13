@@ -15,17 +15,13 @@
 body {
   background-color: var(--background);
   color: var(--grey);
+  display: grid;
   font-family: 'Open Sans', sans-serif;
 }
 
-.main {
-  margin: 0 auto;
-  margin-top: 25px;
+.container {
+  margin: 25px auto 0 auto;
   width: 600px;
-}
-
-main {
-  clear: both;
 }
 
 /* Header */
@@ -38,7 +34,6 @@ header h1 a {
   font-size: 16px;
   font-weight: bold;
   margin: 0px;
-
   float: left;
 }
 
@@ -53,20 +48,22 @@ nav ul {
 }
 
 nav li {
-  display: inline;
-
   float: right;
   padding: 0 4px;
 }
 
 nav li a {
-  display:inline-block;
   font-size: 16px;
 }
 
 nav li a:hover, nav li.active a {
   border-bottom: 4px solid var(--blue);
   line-height: 8px;
+}
+
+/* Main content */
+main {
+  clear: both;
 }
 
 /* Home page */
@@ -79,55 +76,65 @@ nav li a:hover, nav li.active a {
 .home h1 {
   font-size: 44px;
   margin: 20px 35px 0 0;
-  display: inline-block;
-
   border-bottom: 8px solid var(--blue);
   line-height: 26px;
 }
 
-#first {
+.greeting {
   white-space: nowrap;
 }
 
 /* Posts list */
-.posts h1 {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+article {
+  border-bottom: 1px solid var(--grey);
 }
 
-.posts h1 a {
+article:last-child {
+  border-bottom: none
+}
+
+article h2 a {
   font-size: 20px;
-  text-decoration: none;
 }
 
-.posts h1 a:hover {
+article h2 a:hover {
   text-decoration: underline;
 }
 
-.date {
+article .date {
   font-size: 14px;
   font-style: italic;
   margin: 0px;
 }
 
-.content {
+article p {
   font-size: 15px;
-}
-
-a {
-  color: var(--grey);
-  text-decoration: none;
 }
 
 /* Footer */
 footer {
-  border-top: 0.75px solid var(--grey);
+  border-top: 1px solid var(--grey);
+  padding-top: 8px;
 }
 
-footer p {
-  display: inline-block;
+footer small {
   margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+a {
+  color: var(--grey);
+  display: inline-block;
+  text-decoration: none;
+}
+
+div, small, article, h1, h2, h3, .date, nav li {
+  display: block;
 }
 
 /* Mobile */
