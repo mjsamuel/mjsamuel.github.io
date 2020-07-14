@@ -1,8 +1,10 @@
 :root {
 	--background: rgb(247,252,252);
   --grey: rgb(31,57,59);
+  --light-grey: rgb(235,240,240);
 	--blue: rgb(177,212,215);
   --dark-blue: rgb(99,182,185);
+  --pink: rgb(243,177,169);
 }
 
 ::-moz-selection {
@@ -91,11 +93,7 @@ article:last-child {
   border-bottom: none
 }
 
-article h2 a {
-  font-size: 20px;
-}
-
-article h2 a:hover {
+article h1 a:hover {
   text-decoration: underline;
 }
 
@@ -112,6 +110,19 @@ article p {
 /* Post */
 .post-content a {
   color: var(--dark-blue);
+}
+
+.highlight {
+  background-color: var(--grey);
+  /*border: 1px solid var(--grey);*/
+  color: var(--background);
+  margin: 0px;
+  padding: 20px 22px;
+  border-radius: 8px;
+}
+
+pre.highlight {
+  padding: 0;
 }
 
 /* Footer */
