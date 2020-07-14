@@ -1,6 +1,7 @@
 :root {
 	--background: rgb(247,252,252);
   --grey: rgb(31,57,59);
+  --light-grey: rgb(230,235,235);
 	--blue: rgb(177,212,215);
   --dark-blue: rgb(99,182,185);
   --pink: rgb(243,177,169);
@@ -112,26 +113,18 @@ article p {
   color: var(--dark-blue);
 }
 
-.highlight {
+code.highlighter-rouge {
+  background-color: var(--light-grey);
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+div.highlighter-rouge {
   background-color: var(--grey);
   color: var(--background);
   margin: 0px;
-  padding: 20px 22px;
+  padding: 10px 24px;
   border-radius: 8px;
-}
-
-pre.highlight {
-  padding: 0;
-}
-
-/* Footer */
-footer {
-  border-top: 1px solid var(--grey);
-  padding-top: 8px;
-}
-
-footer small {
-  margin: 0 auto;
 }
 
 h1, h2, h3, .post-meta {
@@ -154,6 +147,17 @@ div, small, article, h1, h2, h3, .date,
 nav li {
   display: block;
 }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--grey);
+  padding-top: 8px;
+}
+
+footer small {
+  margin: 0 auto;
+}
+
 
 /* Mobile */
 @media screen and (max-width: 700px) {  
