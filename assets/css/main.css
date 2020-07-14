@@ -78,6 +78,7 @@ main {
   margin: 0 35px 0 0;
   border-bottom: 8px solid var(--blue);
   line-height: 26px;
+  display: inline-block;
 }
 
 .greeting {
@@ -114,7 +115,6 @@ article p {
 
 .highlight {
   background-color: var(--grey);
-  /*border: 1px solid var(--grey);*/
   color: var(--background);
   margin: 0px;
   padding: 20px 22px;
@@ -158,12 +158,12 @@ nav li {
 
 /* Mobile */
 @media screen and (max-width: 700px) {  
-  .main, #first, #second {
+  .container, .greeting {
     width: 95%;
   }
 
   .home {
-    margin: 0 0;
+    margin: 18px 0;
     flex-wrap: wrap;
   }
 
