@@ -2,4 +2,4 @@
 .n, .nf { color: var(--blue) }
 .p {}
 .nb {}
-.c1 {}
+.c1 { color: var(--light-grey) }

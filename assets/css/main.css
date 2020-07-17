@@ -113,12 +113,14 @@ article p {
   color: var(--dark-blue);
 }
 
+/* Inline code block */
 code.highlighter-rouge {
   background-color: var(--light-grey);
   padding: 0 4px;
   border-radius: 4px;
 }
 
+/* Code block */
 div.highlighter-rouge {
   background-color: var(--grey);
   color: var(--background);
@@ -158,9 +160,8 @@ footer small {
   margin: 0 auto;
 }
 
-
 /* Mobile */
-@media screen and (max-width: 700px) {  
+@media screen and (max-width: 650px) {  
   .container, .greeting {
     width: 95%;
   }
