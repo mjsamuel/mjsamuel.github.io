@@ -34,11 +34,12 @@ permalink: "/blog/:title/"
 navigation:
 - text: Home
   url: /
+- text: Projects
+  url: /projects/
 - text: Blog
   url: /blog/
   layout: post
-- text: About
-  url: /about/
+
 
 social_links:
   - github: mjsamuel
