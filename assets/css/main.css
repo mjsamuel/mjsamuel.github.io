@@ -73,18 +73,14 @@ main {
   align-items: center;
 }
 
-.home h1 {
-  font-size: 28px;
-}
-
-.icon {
-  text-align: center
-}
-
 .home img {
-  margin: 0 38px 0 0;
+  margin: 0 32px 0 0;
   width: 200px;
+  height: 225px;
   border-radius: 8px;
+
+  object-fit: cover;
+  object-position: -125px 0px; 
 }
 
 /* Posts list*/
@@ -174,9 +170,14 @@ footer small {
   }
 
   .icon {
-    background: black;
-    border-radius: 8px;
-    margin-bottom: 16px;
     width: 100%;
+  }
+
+  .home img {
+    margin: 0 0 12px 0;
+    width: 100%;
+    height: auto;
+    max-height: 225px;
+    object-position: 50% 0; 
   }
 }
