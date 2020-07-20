@@ -77,14 +77,33 @@ main {
   margin: 0 32px 0 0;
   width: 170px;
   height: 195px;
-  border-radius: 8px;
 
   object-fit: cover;
   object-position: -100px 0px; 
 }
 
 /* Projects list */
+.project {
+  position: relative;
+  color: white;
+}
 
+.project img {
+  width: 100%;
+  height: 200px;
+
+  object-fit: cover;
+}
+
+.project span {
+  color: var(--background);
+
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  font-weight: bold;
+}
 
 /* Posts list*/
 article {
@@ -109,19 +128,18 @@ article p {
   font-size: 15px;
 }
 
-/* Post */
+/* Posts */
 .post-content a {
   color: var(--dark-blue);
 }
 
-/* Inline code block */
+/* Inline code blocks */
 code.highlighter-rouge {
   background-color: var(--light-grey);
   padding: 0 4px;
-  border-radius: 4px;
 }
 
-/* Code block */
+/* Code blocks */
 div.highlighter-rouge {
   background-color: var(--grey);
   color: var(--background);
@@ -159,6 +177,10 @@ footer {
 
 footer small {
   margin: 0 auto;
+}
+
+img, code.highlighter-rouge {
+  border-radius: 8px;
 }
 
 /* Mobile */
