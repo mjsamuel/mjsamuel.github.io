@@ -88,7 +88,7 @@ main {
   color: white;
 }
 
-.project img {
+.project .banner {
   width: 100%;
   height: 200px;
 
@@ -103,6 +103,10 @@ main {
   left: 10px;
 
   font-weight: bold;
+}
+
+.project span img {
+  border-radius: 0;
 }
 
 /* Posts list*/
