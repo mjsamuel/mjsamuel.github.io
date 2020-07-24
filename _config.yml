@@ -36,9 +36,9 @@ navigation:
   url: /
 - text: Projects
   url: /projects/
-- text: Blog
-  url: /blog/
-  layout: post
+# - text: Blog
+#   url: /blog/
+#   layout: post
 
 
 social_links:
