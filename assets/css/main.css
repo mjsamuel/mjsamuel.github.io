@@ -87,7 +87,7 @@ main {
   position: relative;
   color: white;
   width: 100%;
-
+  margin-bottom: 4px;
 }
 
 .project .banner {
@@ -101,7 +101,7 @@ main {
   color: var(--background);
 
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   left: 10px;
 
   font-weight: bold;
