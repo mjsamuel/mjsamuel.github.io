@@ -68,7 +68,7 @@ main {
 
 /* Home page */
 .home {
-  margin: 0 -50px 25px -50px;
+  margin: 0 -50px 0px -50px;
   display: flex;
   align-items: center;
 }
@@ -142,7 +142,8 @@ article p {
 /* Inline code blocks */
 code.highlighter-rouge {
   background-color: var(--light-grey);
-  padding: 0 4px;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 /* Code blocks */
@@ -179,13 +180,14 @@ nav li {
 footer {
   border-top: 1px solid var(--grey);
   padding-top: 8px;
+  margin-top: 25px;
 }
 
 footer small {
   margin: 0 auto;
 }
 
-img, code.highlighter-rouge {
+img {
   border-radius: 8px;
 }
 
