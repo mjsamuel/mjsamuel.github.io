@@ -3,19 +3,18 @@ layout: default
 title: Projects
 ---
 
-<div>
-  <div class='project project-left '>
-    <img class='banner' src="../assets/images/projects/homebridge-magichome-sync.jpg">
-    <span>
-      ADBLOCKCHAIN<br>
-    </span>
-  </div>
+{% for project in site.projects %}
+  {% assign i = forloop.index | modulo: 2 %}
+  {% capture img %} 
+    <img class='banner' src='{{ project.image_path }}'>
+  {% endcapture %}
 
-  <div class='project project-right'>
-    <span>
-      DOTFILES<br>
-    </span>
-    <img class='banner' src="../assets/images/projects/dotfiles.jpg">
+  <div class='project'>
+    {% if i != 0 %} {{ img }} {% endif %}
+    <div class='project-details'>
+      <h2><a href='{{ project.url }}'>{{ project.name }}</a></h2>
+      <p>{{ project.description }}</p>   
+    </div>
+    {% if i == 0 %} {{ img }} {% endif %}
   </div>
-</div>
-
+{% endfor %}

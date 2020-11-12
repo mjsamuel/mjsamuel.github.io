@@ -14,15 +14,26 @@ permalink: "/posts/:title/"
 navigation:
 - text: About
   url: /
-- text: Posts
-  url: /posts/
-  layout: post
-- text: Projects
+# - text: Posts
+#   url: /posts/
+#   layout: post
+- text: Showcase
   url: /projects/
 
 social_links:
   - github: mjsamuel
   - instagram: matt.samuel
+
+projects:
+- name: "HOMEBRIDGE MAGICHOME SYNC"
+  description: >-
+    A Homebridge plugin that syncs your display to a Magic Home device.
+  image_path: "../assets/images/projects/homebridge-magichome-sync.jpg"
+  url: "https://github.com/mjsamuel/homebridge-magichome-sync"
+- name: "DOTFILES"
+  description: ""
+  image_path: "../assets/images/projects/dotfiles.jpg"
+  url: "https://github.com/mjsamuel/dotfiles"
 
 # Build settings
 plugins:
