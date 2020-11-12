@@ -40,7 +40,7 @@ header h1 a {
   float: left;
 }
 
-/* Header nav bar */
+/*  Navigation bar */
 nav ul {
   margin: 0;
   padding: 0;
@@ -82,36 +82,40 @@ main {
   object-position: -100px 0px; 
 }
 
-/* Projects list */
+/* Project list */
 .project {
   margin: 18px -50px;
   display: flex;
-}
+  align-items: center;
 
-.project-right {
-  justify-content: flex-end
 }
 
 .project .banner {
   width: 250px;
-  height: 165px;
+  height: 160px;
   object-fit: cover;
-}
-
-.project-left .banner {
   margin-right: 16px;
 }
 
-.project-right .banner {
+.project:nth-child(2n+2) {
+  justify-content: flex-end
+}
+
+.project:nth-child(2n+2) .banner {
   margin-left: 16px;
+  margin-right: 0;
 }
 
-.project span {
-  font-weight: bold;
+.project-details {
+  width: calc(100% - 320px);
 }
 
-.project span img {
-  border-radius: 0;
+.project-details h2 {
+  font-size: 18px;
+}
+
+.project-details p {
+  margin: 0;
 }
 
 /* Posts list*/
@@ -158,6 +162,7 @@ div.highlighter-rouge {
   border-radius: 8px;
 }
 
+/* Other */
 h1, h2, h3, .post-meta {
   margin: 0px;
   padding: 0px;
@@ -215,5 +220,14 @@ img {
     height: auto;
     max-height: 225px;
     object-position: 50% 0; 
+  }
+
+  .project {
+    margin: 18px 0px;
+    display: flex;
+  }
+
+  .project-details {
+    width: 100%;
   }
 }
