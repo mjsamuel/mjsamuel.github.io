@@ -82,10 +82,10 @@ main {
 
 /* \\ Project list */
 .project {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
-.project .banner {
+.banner {
   width: 250px;
   height: 160px;
   margin-right: 18px;
@@ -222,9 +222,15 @@ footer small {
 
   .project {
     display: flex;
+    margin-bottom: 34px;
+  }
+
+  .banner {
+    width: 35%;
   }
 
   .project-details {
     width: 100%;
   }
+
 }
