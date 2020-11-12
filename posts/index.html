@@ -4,11 +4,11 @@ title: Blog
 ---
 
 <section>
-	{% for post in paginator.posts %}
+  {% for post in paginator.posts %}
     <article>
       <h1><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h1>
       <div class="date">{{ post.date | date_to_string }}</div>
       {{ post.excerpt }}
     </article>
-	{% endfor %}
+  {% endfor %}
 </section>
