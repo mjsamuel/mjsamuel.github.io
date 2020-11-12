@@ -1,5 +1,5 @@
 title: MATT SAMUEL
-email: matthew.samuel@outlook.com.au
+full_name: "Matthew Samuel"
 description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -12,29 +12,45 @@ paginate_path: "/posts/page:num"
 permalink: "/posts/:title/"
 
 navigation:
-- text: About
-  url: /
-# - text: Posts
-#   url: /posts/
-#   layout: post
-- text: Showcase
-  url: /projects/
+  - text: About
+    url: /
+  - text: Showcase
+    url: /projects/
 
-social_links:
-  - github: mjsamuel
-  - instagram: matt.samuel
+footer_links:
+  - name: Github
+    url: "https://github.com/mjsamuel"
+  - name: Instagram
+    url: "https://www.instagram.com/matt.samuel/"
+  - name: Email
+    url: "mailto:matthew.samuel@outlook.com.au"
+
+about:
+  image_path: ""
 
 projects:
-- name: "HOMEBRIDGE MAGICHOME SYNC"
-  description: >-
-    A Homebridge plugin that syncs your display to a Magic Home device.
-  image_path: "../assets/images/projects/homebridge-magichome-sync.jpg"
-  url: "https://github.com/mjsamuel/homebridge-magichome-sync"
-- name: "DOTFILES"
-  description: ""
-  image_path: "../assets/images/projects/dotfiles.jpg"
-  url: "https://github.com/mjsamuel/dotfiles"
+  - name: "ADBLOCKCHAIN"
+    description: >-
+      A browser extension that uses the Ethereum blockchain to pay creators on
+      the web while avoiding ads.
+    image_path: "../assets/images/projects/adblockchain.png"
+    url: "https://github.com/mjsamuel/adblockchain"
+    badges:
+      - "https://img.shields.io/github/languages/top/mjsamuel/adblockchain"
+  - name: "BONFIRE"
+    description: >-
+      Cloudflare in your pocket! An iOS app that manges your Cloudflare account -
+      creating firewall rules and monitoring activity.
+    image_path: "../assets/images/projects/bonfire.png"
+    url: "https://github.com/mjsamuel/bonfire"
+  - name: "HOMEBRIDGE MAGICHOME SYNC"
+    description: >-
+      A Homebridge plugin that syncs a display to a Magic Home device.
+    image_path: "../assets/images/projects/homebridge-magichome-sync.png"
+    url: "https://github.com/mjsamuel/homebridge-magichome-sync"
+    badges:
+      - "https://img.shields.io/github/languages/top/mjsamuel/Homebridge-MagicHome-Sync"
+      - "https://img.shields.io/npm/dt/homebridge-magichome-sync?label=npm%20downloads"
 
-# Build settings
 plugins:
   - jekyll-feed

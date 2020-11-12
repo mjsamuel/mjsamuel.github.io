@@ -1,9 +1,9 @@
 <footer>
   <small>
-    © 2020 Matthew Samuel.<br>
-    <a href="https://github.com/mjsamuel">Github</a>. 
-    <a href="https://www.instagram.com/matt.samuel/">Instagram</a>. 
-    <a href="mailto:matthew.samuel@outlook.com.au">Email</a>. 
+    © 2020 {{ site.full_name }}.<br>
+    {% for link in site.footer_links %}
+      <a href='{{ link.url }}'>{{ link.name }}</a>. 
+    {% endfor %}
     <a href="{{ 'feed.xml' | relative_url }}">RSS</a>.
   </small>
 </footer>

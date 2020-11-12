@@ -24,7 +24,7 @@ body {
 
 .container {
   margin: 25px auto 0 auto;
-  width: 600px;
+  width: 625px;
 }
 
 /* Header */
@@ -75,7 +75,7 @@ main {
 
 .home img {
   margin: 0 32px 0 0;
-  width: 170px;
+  width: 200px;
   height: 195px;
 
   object-fit: cover;
@@ -84,17 +84,16 @@ main {
 
 /* Project list */
 .project {
-  margin: 18px -50px;
+  margin: 26px -50px;
   display: flex;
   align-items: center;
-
 }
 
 .project .banner {
   width: 250px;
   height: 160px;
   object-fit: cover;
-  margin-right: 16px;
+  margin-right: 18px;
 }
 
 .project:nth-child(2n+2) {
@@ -102,12 +101,12 @@ main {
 }
 
 .project:nth-child(2n+2) .banner {
-  margin-left: 16px;
+  margin-left: 18px;
   margin-right: 0;
 }
 
 .project-details {
-  width: calc(100% - 320px);
+  width: calc(100% - 327px);
 }
 
 .project-details h2 {
@@ -116,6 +115,13 @@ main {
 
 .project-details p {
   margin: 0;
+}
+
+.project-details img {
+  border-radius: 0;
+  margin: 8px 4px 0 0;
+  float: left;
+  display: block;
 }
 
 /* Posts list*/
@@ -200,7 +206,7 @@ img {
 }
 
 /* Mobile */
-@media screen and (max-width: 706px) {  
+@media screen and (max-width: 750px) {  
   .container {
     width: 95%;
   }

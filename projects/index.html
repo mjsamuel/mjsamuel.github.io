@@ -13,8 +13,11 @@ title: Projects
     {% if i != 0 %} {{ img }} {% endif %}
     <div class='project-details'>
       <h2><a href='{{ project.url }}'>{{ project.name }}</a></h2>
-      <p>{{ project.description }}</p>   
-    </div>
+      <p>{{ project.description }}</p>
+      {% for badge in project.badges %}
+        <img src='{{ badge }}'>
+      {% endfor %}
+      </div>
     {% if i == 0 %} {{ img }} {% endif %}
   </div>
 {% endfor %}
