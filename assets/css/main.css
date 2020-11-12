@@ -22,25 +22,25 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+body > :first-child {
   margin: 25px auto 0 auto;
   width: 625px;
 }
 
-/* Header */
+/* \\ Header */
 header {
-  margin-bottom: 68px;
+  margin-bottom: 64px;
 }
 
-header h1 a {
+header h1 {
   font-family: 'Roboto', cursive;
   font-size: 16px;
   font-weight: bold;
-  margin: 0px;
+  margin: 0;
   float: left;
 }
 
-/*  Navigation bar */
+/* \\ Navigation bar */
 nav ul {
   margin: 0;
   padding: 0;
@@ -49,51 +49,49 @@ nav ul {
 nav li {
   float: right;
   padding: 0 4px;
-}
-
-nav li a {
   font-size: 16px;
 }
 
-nav li a:hover, nav li.active a {
+nav li a:hover, nav .active a {
   border-bottom: 4px solid var(--blue);
   line-height: 8px;
   text-decoration: none;
 }
 
-/* Main content */
+/* \\ Main content */
 main {
   clear: both;
 }
 
-/* Home page */
-.home {
-  margin: 0 -50px 0px -50px;
-  display: flex;
-  align-items: center;
-}
-
-.home img {
-  margin: 0 32px 0 0;
+/* \\ About page */
+.about img {
   width: 200px;
   height: 195px;
+  margin-right: 32px;
 
   object-fit: cover;
-  object-position: -100px 0px; 
+  object-position: -90px 0; 
+  flex-shrink: 0;
 }
 
-/* Project list */
-.project {
-  margin: 26px -50px;
+.offset {
+  margin: 0 -50px;
   display: flex;
   align-items: center;
+}
+
+/* \\ Project list */
+.project {
+  margin-bottom: 26px;
 }
 
 .project .banner {
   width: 250px;
   height: 160px;
-  object-fit: cover;
   margin-right: 18px;
+
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .project:nth-child(2n+2) {
@@ -124,7 +122,7 @@ main {
   display: block;
 }
 
-/* Posts list*/
+/* \\ Posts list*/
 article {
   border-bottom: 1px solid var(--grey);
 }
@@ -140,41 +138,31 @@ article h1 a:hover {
 .date, time {
   font-size: 14px;
   font-style: italic;
-  margin: 0px;
+  margin: 0;
 }
 
-article p {
-  font-size: 15px;
-}
-
-/* Posts */
+/* \\ Posts */
 .post-content a {
   color: var(--dark-blue);
 }
 
-/* Inline code blocks */
+/* \\ Inline code blocks */
 code.highlighter-rouge {
   background-color: var(--light-grey);
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-/* Code blocks */
+/* \\ Code blocks */
 div.highlighter-rouge {
   background-color: var(--grey);
   color: var(--background);
-  margin: 0px;
+  margin: 0;
   padding: 10px 24px;
   border-radius: 8px;
 }
 
-/* Other */
-h1, h2, h3, .post-meta {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-}
-
+/* \\ Other */
 a {
   color: var(--grey);
   display: inline-block;
@@ -185,12 +173,21 @@ a:hover {
   text-decoration: underline;
 }
 
-div, small, article, h1, h2, h3, .date, 
-nav li {
+h1, h2, h3, .post-meta {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, small, article, h1, h2, h3, .date, nav li {
   display: block;
 }
 
-/* Footer */
+img {
+  border-radius: 8px;
+}
+
+/* \\ Footer */
 footer {
   border-top: 1px solid var(--grey);
   padding-top: 8px;
@@ -201,35 +198,29 @@ footer small {
   margin: 0 auto;
 }
 
-img {
-  border-radius: 8px;
-}
-
-/* Mobile */
+/* \\ Mobile */
 @media screen and (max-width: 750px) {  
-  .container {
+  body > :first-child {
     width: 95%;
   }
 
-  .home {
-    margin: 18px 0;
+  .about {
     flex-wrap: wrap;
   }
 
-  .icon {
-    width: 100%;
-  }
-
-  .home img {
-    margin: 0 0 12px 0;
+  .about img {
     width: 100%;
     height: auto;
     max-height: 225px;
+    margin-bottom: 12px;
     object-position: 50% 0; 
   }
 
+  .offset {
+    margin: 18px 0;
+  }
+
   .project {
-    margin: 18px 0px;
     display: flex;
   }
 

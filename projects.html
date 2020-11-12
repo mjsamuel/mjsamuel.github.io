@@ -9,7 +9,7 @@ title: Projects
     <img class='banner' src='{{ project.image_path }}'>
   {% endcapture %}
 
-  <div class='project'>
+  <div class='project offset'>
     {% if i != 0 %} {{ img }} {% endif %}
     <div class='project-details'>
       <h2><a href='{{ project.url }}'>{{ project.name }}</a></h2>

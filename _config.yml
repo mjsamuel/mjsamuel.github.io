@@ -43,6 +43,8 @@ projects:
       creating firewall rules and monitoring activity.
     image_path: "../assets/images/projects/bonfire.png"
     url: "https://github.com/mjsamuel/bonfire"
+    badges:
+      - "https://img.shields.io/github/languages/top/mjsamuel/bonfire"
   - name: "HOMEBRIDGE MAGICHOME SYNC"
     description: >-
       A Homebridge plugin that syncs a display to a Magic Home device.
