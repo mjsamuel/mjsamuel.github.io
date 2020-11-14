@@ -1,9 +1,8 @@
 title: MATT SAMUEL
 full_name: "Matthew Samuel"
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Matt Samuel - a fan of tech, design, rectangles and the times when they happen
+  to intersect.
 baseurl: ""
 url: "https://mjsamuel.github.io"
 
@@ -15,7 +14,7 @@ navigation:
   - text: About
     url: /
   - text: Showcase
-    url: /projects/
+    url: /showcase/
 
 footer_links:
   - name: Github
