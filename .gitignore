@@ -85,3 +85,6 @@ $RECYCLE.BIN/
 
 ### Other ###
 assets/favicon/favicon.psd
+
+### Vim ###
+*.swp
